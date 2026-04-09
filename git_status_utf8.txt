@@ -1,0 +1,29 @@
+﻿On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   next.config.mjs
+	modified:   package-lock.json
+	modified:   package.json
+	modified:   src/app/globals.css
+	modified:   src/app/layout.js
+	modified:   src/app/page.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status_utf8.txt
+	public/Farmer_Ploughing_Field_Animation.mp4
+	public/images1.jpg
+	src/app/api/
+	src/app/cart/
+	src/app/checkout/
+	src/app/farmer/
+	src/app/login/
+	src/app/my-orders/
+	src/app/product/
+	src/app/signup/
+	src/components/
+	src/context/
+	src/lib/
+
+no changes added to commit (use "git add" and/or "git commit -a")

@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌾 RythuMitra
 
-## Getting Started
+An AI-powered farmer-to-consumer marketplace that enables farmers to sell products using voice interaction. The system uses Generative AI, NLP, and real-time analysis to assist farmers in listing products and help customers make informed decisions.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🎯 Features
+
+### 👨‍🌾 Farmer Features
+- **Voice-based product listing** (speech-to-text + AI processing)
+- **Multilingual support** (auto-detect and respond in user language)
+- **AI-generated product description**
+- **AI-based product analysis** (price, demand, freshness)
+- **Dynamic question-based product entry** (no fixed forms)
+- **Automatic image fetching** (via Pexels API) or custom image upload
+- **Farmer dashboard** to seamlessly manage products
+- **Voice-based interaction** for hands-free and accessible usage
+
+### 🛒 Customer Features
+- **Browse and search** products
+- **Add to cart** (secure, user-specific cart functionality)
+- **Place order** (Cash on Delivery only)
+- **My Orders** section with easy order tracking
+- **Rating and feedback** system for all purchases
+- **Automated quality control** (removes products with >30% dislikes)
+
+### 📦 Order Management
+- Farmer can **accept/reject** incoming orders
+- Farmer can **set delivery time**
+- **Live status updates** in the customer dashboard
+- **Notifications** via email/messages
+
+### 🤖 AI Capabilities
+- **Natural Language Processing (NLP)** for conversational input
+- **Voice recognition and dynamic response**
+- **Market analysis** using intelligent API data
+- Optional **image-based product scanning**
+- **Smart recommendations** that support—without overriding—the farmer’s input
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router), React, Tailwind CSS, Framer Motion
+- **Backend:** Firebase (Authentication + Firestore Database)
+- **AI Integration:** LLMs (Groq API), Native NLP capabilities
+- **Voice Features:** Speech-to-Text & Text-to-Speech APIs
+- **Image Intelligence:** Pexels API
+- **Deployment:** Vercel
+
+---
+
+## 🚀 Live Demo
+
+[Live App URL](https://rythu-mitra.vercel.app/) *(Placeholder)*
+
+---
+
+## ⚙️ Setup Instructions
+
+Follow these steps to run the application locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/KIRANSAIANAND/RythuMitra.git
+   cd rythu-mitra
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file in the root of your project and include the following keys:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY="your_firebase_api_key_here"
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="your_firebase_auth_domain_here"
+NEXT_PUBLIC_FIREBASE_PROJECT_ID="your_firebase_project_id_here"
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="your_firebase_storage_bucket_here"
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="your_firebase_sender_id_here"
+NEXT_PUBLIC_FIREBASE_APP_ID="your_firebase_app_id_here"
+
+PEXELS_API_KEY="your_pexels_api_key_here"
+GROQ_API_KEY="your_groq_api_key_here"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📊 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+rythu-mitra/
+├── src/
+│   ├── app/           # Next.js App Router (pages and layouts)
+│   ├── components/    # Reusable UI elements and sections
+│   ├── context/       # Global state management and React contexts
+│   └── lib/           # Utility functions, AI logic, API integrations, and Firebase setup
+├── public/            # Static assets like images and icons
+├── package.json       # Project dependencies and scripts
+└── tailwind.config.js # Styling configurations
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌟 Future Enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Real-time mandi price integration** for ultra-accurate pricing
+- **Advanced AI quality detection** using direct image analysis
+- **Online payment integration** (Stripe/Razorpay)
+- **Logistics and delivery tracking**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🙌 Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.

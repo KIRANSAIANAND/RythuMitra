@@ -52,7 +52,7 @@ An AI-powered farmer-to-consumer marketplace that enables farmers to sell produc
 
 ## 🚀 Live Demo
 
-[Live App URL](https://rythu-mitra.vercel.app/) *(Placeholder)*
+[Live App URL](https://rythu-mitra-eoho.vercel.app/) *(Placeholder)*
 
 ---
 
